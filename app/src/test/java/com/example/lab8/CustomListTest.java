@@ -40,11 +40,9 @@ public class CustomListTest {
     public void deleteCityTest(){
         CustomList list1 = mockCityList();
         City city1 = mockCity();
-        list1.add(city1);
+        list1.addCity(city1);
         assertTrue(list1.hasCity(city1));
 
-
-        int listSize = list1.getCount();
         list1.deleteCity(city1);
         assertFalse(list1.hasCity(city1));
     }
