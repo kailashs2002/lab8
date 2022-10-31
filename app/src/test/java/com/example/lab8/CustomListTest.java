@@ -53,7 +53,7 @@ public class CustomListTest {
         assertEquals(list1.countCities(), 0);
 
         City city1 = mockCity();
-        list1.add(city1);
+        list1.addCity(city1);
         assertEquals(list1.countCities(), 1);
     }
 }
